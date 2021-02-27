@@ -1,0 +1,38 @@
+problem statement :
+This series is a mixture of 2 series – all the odd terms in this series form a geometric series and all the even terms form yet another geometric series. Write a program to find the Nth term in the series.
+1, 1, 2, 3, 4, 9, 8, 27, 16, 81, 32, 243,64, 729, 128, 2187 ….
+
+Explanation
+1, 1, 2, 3, 4, 9, 8, 27, 16, 81, 32, 243,64, 729, 128, 2187 can represented as :
+2(0), 3(0),2(1), 3(1),2(2), 3(2),2(3), 3(3),2(4), 3(4),2(5), 3(5),2(6), 3(6) ….
+There are two consecutive sub GP’s at even and odd positions
+(GP-1) At Odd Positions (Powers of 2) – 1, 2, 4, 8, 16, 32, 64, 128
+(GP-2) At Even Positions (Powers of 3) – 1, 3, 9, 27, 81, 243, 729, 2187
+
+Input Description:
+The value N in a positive  single integer 
+
+output description 
+Print the single integer denotes the Nth value 
+
+Test Case 1
+
+Input- 16
+Output – 2187
+
+Test Case 2
+Input- 13
+Output – 64
+
+Test Case 3
+Input- 100
+Output – 239299329230617529590083                                                                                                      
+
+Test Case 4
+Input- 1000
+Expected Output – 121200972652899789474617556931811063726744616753338743467820119441935333971946318280661694209931295944360599008448012852509519
+77172337688714330810305520675260007257082615881150041780945521937736657530123863384192909336128663379931792536667 
+
+test case 5
+input - 50
+output -282429536481                                                                                                                  
