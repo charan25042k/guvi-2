@@ -2,6 +2,30 @@ Problem Statement
 One programming language has the following keywords that cannot be used as identifiers:break, case, continue, default, defer, else, for, func, goto, if, map, range, return, struct, type, var
 Write a program to find if the given word is a keyword or not
 
+input description:
+The first line contail string as input 
+output description:
+Print key word if the given string is keyword otherwise print not key word 
+
+Explanation :
+for test case 1 defer is the input string. The defer is keyword so the output is keyword 
+
+Case 1
+Input – defer
+Output – defer is a keyword
+Case 2
+Input – While
+Output – while is not a keyword
+
+Case 3
+Input – case
+ Output – case  is a keyword
+Case 4
+Input – print 
+Output – print  is not a keyword
+Case 5
+Input –  else 
+Output – else   is a keyword
 
 program 
 python  
