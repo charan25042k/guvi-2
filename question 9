@@ -1,0 +1,48 @@
+Problem Statement 
+A person A walking in a way and noting the each distance by 1 2 3.. . After some destionation he confused so he come back how he went so that we want to reverse the first noted integer 
+
+
+Explanation "
+fot test case one he notes as 12345 then the reveres is 54321
+input description
+The first line contain inter N
+Output description
+
+Print the integer denotes reverse of N
+
+program in c 
+#include <stdio.h>
+int main() {
+    int n, rev = 0, remainder;
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+    while (n != 0) {
+        remainder = n % 10;
+        rev = rev * 10 + remainder;
+        n /= 10;
+    }
+    printf("Reversed number = %d", rev);
+    return 0;
+}
+
+Test case 1
+input = 12345
+output= 54321
+
+Test case 2
+input = 852369
+output= 963258
+
+
+Test case 3
+input = 1001
+output= 1001
+
+Test case 4
+input = 785412
+output= 214587
+
+
+Test case 5
+input = 965478
+output= 874569
