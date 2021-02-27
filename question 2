@@ -1,1 +1,33 @@
+problem statement 
+Ram is good in maths. His friend Ravi want to test him. so for Ravi gives task as converting Hexa decimal value to decimal value. Help Ram for complete the task.
+explanation:
+(AFD)₁₆ = (10 × 16²) + (15 × 16¹) + (13 × 16⁰) = (2813)₁₀
+input Description :
+The given N input as string 
 
+output description
+print the single integer denotes the decimal values.
+
+program 
+num = str(input())
+print(int(num,17))
+
+Test case 1
+Input – 1A
+Output – 27
+
+Test case 2
+Input – 25c
+Output – 604
+
+Test case 3
+Input – 25
+Output – 37
+
+Test case 4
+Input – FF
+Output – 255
+
+Test case 5
+Input – AFD
+Output – 2813
