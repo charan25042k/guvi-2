@@ -1,0 +1,50 @@
+problem statement 
+Ravi is very well in addition and substraction.His teacher given a big number . he want to find the difference between the sum of odd and even numbers in the big number .
+
+explanation :
+Odd positions are 4 and 6 as they are pos: 1 and pos: 3, both have sum 10. Similarly, 5 and 7 are at even positions pos: 2 and pos: 4 with sum 12. Thus, difference is 12 – 10 = 2
+
+Input description:
+A single integer N denotes the big number 
+Output description 
+A single integer denotes the difference 
+
+Test case  1
+Input: 4567
+Output: 2
+
+Test case  2
+Input: 9834698765123
+Output: 1
+
+Test case  3
+Input: 753148962                                                                                                    
+Output: 5
+
+Test case  4
+Input: 128974563
+Output: 3
+
+Test case  5
+Input: 128974563
+Output: 9
+
+
+program 
+num = [int(d) for d in str(input("Enter the number:"))]
+even,odd = 0,0
+for i in range(0,len(num)):
+    if i % 2 ==0:
+        even = even + num[i]
+    else:
+        odd = odd + num[i]
+
+print(abs(odd-even))num = [int(d) for d in str(input("Enter the number:"))]
+even,odd = 0,0
+for i in range(0,len(num)):
+    if i % 2 ==0:
+        even = even + num[i]
+    else:
+        odd = odd + num[i]
+
+print(abs(odd-even))
