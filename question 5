@@ -1,1 +1,83 @@
+Raju is good in obseving letter .For checking his observing qualityhis teacher gibves 3 english word ,In the first line  he change the all vowels into * and 
+In the seconf line all consonants  are replaced by @. In the last line he covert all in uppercase . Help him to comple the task.
 
+Explanation:
+For example  Test case 1 if you print how are you then output should be h*wa@eYOU.
+
+Input description:
+The first line contain string as input 
+The second line contain string as input 
+Thw third line contains string as inout 
+
+output Description
+print the sible line as string after convertion 
+
+Test case 1
+Input -how
+are
+you
+ Output : h*wa@eYOU
+
+Test Case 2
+Input-how
+999
+you
+Output : h*w999YOU
+
+Test Case 3
+input description-hello                                                                                                                         
+world                                                                                                                         
+welcome                                                                                                                       
+Output description-h*ll*@o@@@WELCOME 
+
+Test case 4 
+Input -how                                                                                                                           
+old                                                                                                                           
+are                                                                                                                       
+Output -h*wo@@ARE
+
+Test case 5
+Input - i                                                                                                                             
+need                                                                                                                          
+help                                                                                                                          
+output -*@ee@HELP 
+
+
+
+prohram in C
+
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+
+int main()
+{
+int i;
+char a[100],b[100],c[100];
+
+    scanf("%s",a);
+    scanf("%s",b);
+    scanf("%s",c);
+
+    for(i=0;a[i]!='\0';i++)
+    {
+        if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u'||a[i]=='A'||a[i]=='E'||a[i]=='I'||a[i]=='O'||a[i]=='U')
+            a[i]='*';
+    }
+
+    for(i=0;b[i]!='\0';i++)
+    {
+        if((b[i]>='a'&&b[i]<='z') || (b[i]>='A'&&b[i]<='Z'))
+            if(!(b[i]=='a'||b[i]=='e'||b[i]=='i'||b[i]=='o'||b[i]=='u'||b[i]=='A'||b[i]=='E'||b[i]=='I'||b[i]=='O'||b[i]=='U'))
+                b[i]='@';
+    }
+
+    for(i=0;c[i]!='\0';i++)
+    {
+        if(c[i]>='a'&&c[i]<='z')
+            c[i]=c[i]-32;
+    }
+
+    printf("%s%s%s",a,b,c);
+    return 0;
+}
