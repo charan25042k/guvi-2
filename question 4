@@ -36,3 +36,15 @@ Expected Output – 121200972652899789474617556931811063726744616753338743467820
 test case 5
 input - 50
 output -282429536481                                                                                                                  
+
+
+program 
+
+num = int(input())
+
+if(num%2==0):
+    num = num // 2
+    print(3**(num-1))
+else:
+    num = num // 2 + 1
+    print(2**(num-1))
